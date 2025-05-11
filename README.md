@@ -2,7 +2,7 @@
 
 Bem-vindo ao **Presentation Arch**! Este é um espaço para aprender e compartilhar formas eficazes de apresentar projetos e engajar seu público.
 
-##>>>>>>>>>>>>>> 🔗 Acesse agora!
+##🔗 Acesse agora!
 [![Presentation Arch](https://img.shields.io/badge/Acesse%20o%20site-Aqui-blue)](https://lima345.github.io/presentation-arch/)
 
 ## ✨ **Por que usar esse modelo de apresentação?**
