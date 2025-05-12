@@ -6,6 +6,6 @@ body {
 }
 
 #unity-canvas {
-    width: 1920px; /* Ou outro tamanho */
-    height: 1080px;
+    width: 1280px; /* Ou outro tamanho */
+    height: 720px;
 }
