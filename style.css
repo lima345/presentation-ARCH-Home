@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #000408, #002046); /* Seu degradê personalizado */
+}
+
+#unity-canvas {
+    width: 1920px; /* Ou outro tamanho */
+    height: 1080px;
+}

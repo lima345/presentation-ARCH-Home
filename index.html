@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | SimBlink</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="adjustCanvas.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="adjustCanvas.js"></script>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            background: linear-gradient(to bottom, #b4c3d1, #01152e); /* Cinza escuro para azul acinzentado */
+        }
+    </style>
+</head>
+<body>
+    <div id="unity-container" class="unity-desktop">
+        <canvas id="unity-canvas" width="1280" height="720" tabindex="-1"></canvas>
+        <div id="unity-loading-bar">
+            <div id="unity-logo"></div>
+            <div id="unity-progress-bar-empty">
+                <div id="unity-progress-bar-full"></div>
+            </div>
+        </div>
+        <div id="unity-warning"></div>
+        <div id="unity-footer">
+            <div id="unity-fullscreen-button"></div>
+        </div>
+    </div>
+    
+    <script>
+        var container = document.querySelector("#unity-container");
+        var canvas = document.querySelector("#unity-canvas");
+        var loadingBar = document.querySelector("#unity-loading-bar");
+        var progressBarFull = document.querySelector("#unity-progress-bar-full");
+        var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+        var warningBanner = document.querySelector("#unity-warning");
+
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+            var meta = document.createElement('meta');
+            meta.name = 'viewport';
+            meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+            document.getElementsByTagName('head')[0].appendChild(meta);
+            container.className = "unity-mobile";
+            canvas.className = "unity-mobile";
+        } else {
+            canvas.style.width = "1920px";
+            canvas.style.height = "1080px";
+        }
+
+        loadingBar.style.display = "block";
+        var script = document.createElement("script");
+        script.src = "Build/apresentação bim otimizada.loader.js";
+        script.onload = () => {
+            createUnityInstance(canvas, {
+                dataUrl: "Build/apresentação bim otimizada.data",
+                frameworkUrl: "Build/apresentação bim otimizada.framework.js",
+                codeUrl: "Build/apresentação bim otimizada.wasm",
+                streamingAssetsUrl: "StreamingAssets",
+                companyName: "Master EVO",
+                productName: "SimBlink",
+                productVersion: "1.0",
+                showBanner: function(msg, type) {
+                    var div = document.createElement('div');
+                    div.innerHTML = msg;
+                    warningBanner.appendChild(div);
+                    if (type == 'error') div.style = 'background: red; padding: 10px;';
+                    else {
+                        if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+                        setTimeout(() => {
+                            warningBanner.removeChild(div);
+                        }, 5000);
+                    }
+                }
+            }, (progress) => {
+                progressBarFull.style.width = 100 * progress + "%";
+            }).then((unityInstance) => {
+                loadingBar.style.display = "none";
+                fullscreenButton.onclick = () => {
+                    unityInstance.SetFullscreen(1);
+                };
+            }).catch((message) => {
+                alert(message);
+            });
+        };
+
+        document.body.appendChild(script);
+    </script>
+</body>
+</html>
