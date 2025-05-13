@@ -13,7 +13,7 @@ Bem-vindo ao **Presentation Arch**! Este é um espaço para aprender e compartil
 - 🎤 **Narrativa impactante**: Conte uma história cativante e mantenha seu público engajado.
 
 ## 📢 **Como compartilhar com sua equipe?**
-1. Acesse o link: [Presentation Arch](https://lima345.github.io/presentation-arch/)
+1. Acesse o link: [Presentation Arch](https://lima345.github.io/presentation-ARCH-Home/)
 2. Revise os materiais e aplique as técnicas ao seu projeto.
 3. Compartilhe com sua equipe e receba feedback para aprimorar ainda mais sua apresentação.
 
