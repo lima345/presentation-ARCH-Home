@@ -2,10 +2,11 @@
 
 Bem-vindo ao **Presentation Arch**! Este é um espaço para aprender e compartilhar formas eficazes de apresentar projetos e engajar seu público.
 
-## 🔗 Acesse agora!
+## 🔗 **Acesse agora!**
 <span style="color: red; font-size: 40px;"><strong>Somente para computadores!!!</strong></span>  
-<span style="color: red; font-size: 14px;">Em celulares não é possível navegar, somente ver o objeto</span>
-[![Presentation Arch](https://img.shields.io/badge/Acesse%20o%20site-Aqui-blue)](1. Acesse o link: [Presentation Arch](https://lima345.github.io/presentation-ARCH-Home/))
+<span style="color: red; font-size: 14px;">Em celulares não é possível navegar, apenas visualizar o objeto.</span>  
+
+[![Presentation Arch](https://img.shields.io/badge/Acesse%20o%20site-Aqui-blue)](https://lima345.github.io/presentation-ARCH-Home/)
 
 ## ✨ **Por que usar esse modelo de apresentação?**
 - 🧩 **Estrutura clara**: Organize suas ideias de forma intuitiva.
@@ -24,8 +25,6 @@ Bem-vindo ao **Presentation Arch**! Este é um espaço para aprender e compartil
 
 ---
 
-**🚀 Pronto para melhorar suas apresentações? Explore agora mesmo o Presentation Arch!**  
+🚀 **Pronto para melhorar suas apresentações? Explore agora mesmo o Presentation Arch!**  
 
-📌 [Acesse aqui](https://lima345.github.io/presentation-arch/)
-
----
+📌 [Acesse aqui](https://lima345.github.io/presentation-ARCH-Home/)
